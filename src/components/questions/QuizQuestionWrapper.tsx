@@ -73,7 +73,6 @@ export function QuizQuestionWrapper({
       <SingleAnswer
         id={`question-${questionIndex}`}
         questionNumber={questionIndex + 1}
-        instruction="Select the best answer from the options below."
         question={question.question}
         options={options}
         correctAnswer={question.options.find(opt => opt.correct)?.option || ''}
@@ -85,7 +84,6 @@ export function QuizQuestionWrapper({
       <MultipleAnswer
         id={`question-${questionIndex}`}
         questionNumber={questionIndex + 1}
-        instruction="Select all correct answers from the options below."
         question={question.question}
         options={options}
         correctAnswers={question.options.filter(opt => opt.correct).map(opt => opt.option)}

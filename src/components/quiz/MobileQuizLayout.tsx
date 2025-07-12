@@ -61,6 +61,7 @@ export function MobileQuizLayout({
         currentQuestionIndex={currentQuestionIndex}
         totalQuestions={totalQuestions}
         onReset={onReset}
+        onBackToSelection={onBackToSelection}
         isMobile={true}
       />
 

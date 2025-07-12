@@ -13,7 +13,7 @@ interface Option {
 interface MultipleAnswerProps {
   id: string;
   questionNumber?: number;
-  instruction: string;
+  instruction?: string;
   question: string;
   options: Option[];
   correctAnswers: string[];
