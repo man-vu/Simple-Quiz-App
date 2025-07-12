@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -24,6 +24,30 @@ export function QuestionNavigation({
   onSubmit,
   isMobile = false
 }: QuestionNavigationProps) {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Auto-scroll to center the current question on mobile
+  useEffect(() => {
+    if (isMobile && scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const questionButtons = container.querySelectorAll('button');
+      const currentButton = questionButtons[currentQuestionIndex];
+      
+      if (currentButton) {
+        const containerWidth = container.offsetWidth;
+        const buttonWidth = currentButton.offsetWidth;
+        const buttonLeft = currentButton.offsetLeft;
+        // Move the selected question more to the left by subtracting an offset
+        const scrollLeft = buttonLeft - (containerWidth / 2) + (buttonWidth / 2) - (containerWidth * 0.25);
+        
+        container.scrollTo({
+          left: Math.max(0, scrollLeft),
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [currentQuestionIndex, isMobile]);
+
   return (
     <>
       {/* Spacer div to prevent content from being hidden behind fixed navigation */}
@@ -48,7 +72,10 @@ export function QuestionNavigation({
                 </Button>
 
                 {/* Question Numbers - Scrollable */}
-                <div className="flex-1 overflow-x-auto">
+                <div 
+                  ref={scrollContainerRef}
+                  className="flex-1 overflow-x-auto scrollbar-hide"
+                >
                   <div className="flex gap-2 min-w-max px-2">
                     {Array.from({ length: totalQuestions }, (_, index) => (
                       <button
