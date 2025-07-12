@@ -3571,18 +3571,18 @@
               },
               {
                 "option": "Controls the NIC responsible for sending and receiving data on the physical medium.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Implements a trailer to detect transmission errors.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Enables IPv4 and IPv6 to utilize the same network interface and media.",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:A rollover cable is a Cisco proprietary cable used to connect to a router or switch console port. A straight-through (also called patch) cable is usually used to interconnect a host to a switch and a switch to a router. A crossover cable is used to interconnect similar devices together, for example, between two switches, two routers, and two hosts.",
             "source": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
@@ -3897,72 +3897,6 @@
             ],
             "question_type": "SINGLE_ANSWER",
             "explanation": "Explanation:A rollover cable is a Cisco proprietary cable used to connect to a router or switch console port. A straight-through (also called patch) cable is usually used to interconnect a host to a switch and a switch to a router. A crossover cable is used to interconnect similar devices together, for example, between two switches, two routers, and two hosts.",
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "80. Which type of UTP cable is used to connect a PC to a switch port?",
-            "images": [],
-            "options": [
-              {
-                "option": "console",
-                "correct": false
-              },
-              {
-                "option": "rollover",
-                "correct": false
-              },
-              {
-                "option": "crossover",
-                "correct": false
-              },
-              {
-                "option": "straight-through",
-                "correct": false
-              },
-              {
-                "option": "",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "14. A network administrator is measuring the transfer of bits across the company backbone for a mission critical financial application. The administrator notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)",
-            "images": [],
-            "options": [
-              {
-                "option": "the amount of traffic that is currently crossing the network",
-                "correct": false
-              },
-              {
-                "option": "the sophistication of the encapsulation method applied to the data",
-                "correct": false
-              },
-              {
-                "option": "the type of traffic that is crossing the network",
-                "correct": false
-              },
-              {
-                "option": "the latency that is created by the number of network devices that the data is crossing",
-                "correct": false
-              },
-              {
-                "option": "the bandwidth of the WAN connection to the Internet",
-                "correct": false
-              },
-              {
-                "option": "the reliability of the gigabit Ethernet infrastructure of the backbone",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
             "source": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-4-7-ethernet-concepts-exam-answers.html",
             "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
@@ -7991,76 +7925,6 @@
             "source": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
             "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "14. Refer to the exhibit. Considering the addresses already used and having to remain within the 10.16.10.0/24 network range, which subnet address could be assigned to the network containing 25 hosts?",
-            "images": [],
-            "options": [
-              {
-                "option": "10.16.10.160/26",
-                "correct": false
-              },
-              {
-                "option": "10.16.10.128/28",
-                "correct": false
-              },
-              {
-                "option": "10.16.10.64/27",
-                "correct": false
-              },
-              {
-                "option": "10.16.10.224/26",
-                "correct": false
-              },
-              {
-                "option": "10.16.10.240/27",
-                "correct": false
-              },
-              {
-                "option": "10.16.10.240/28",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "23. Which of these addresses is the shortest abbreviation for the IP address:3FFE:1044:0000:0000:00AB:0000:0000:0057?",
-            "images": [],
-            "options": [
-              {
-                "option": "3FFE:1044::AB::57",
-                "correct": false
-              },
-              {
-                "option": "3FFE:1044::00AB::0057",
-                "correct": false
-              },
-              {
-                "option": "3FFE:1044:0:0:AB::57",
-                "correct": false
-              },
-              {
-                "option": "3FFE:1044:0:0:00AB::0057",
-                "correct": false
-              },
-              {
-                "option": "3FFE:1044:0000:0000:00AB::57",
-                "correct": false
-              },
-              {
-                "option": "3FFE:1044:0000:0000:00AB::0057",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-11-13-ip-addressing-exam-answers-full.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
           }
         ]
       },
@@ -9545,60 +9409,6 @@
               },
               {
                 "option": "80",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-14-15-network-application-communications-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-14-15-network-application-communications-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "1.A client creates a packet to send to a server. The client is requesting SSH service. What number will be used as the destination port number in the sending packet?",
-            "images": [],
-            "options": [
-              {
-                "option": "69",
-                "correct": false
-              },
-              {
-                "option": "67",
-                "correct": false
-              },
-              {
-                "option": "22",
-                "correct": false
-              },
-              {
-                "option": "80",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-1-v7-modules-14-15-network-application-communications-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-1-v7-modules-14-15-network-application-communications-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-1-v7-exam-answers-introduction-to-networks-v7-0-itn.html"
-          },
-          {
-            "question": "2.What is true about the Server Message Block protocol?",
-            "images": [],
-            "options": [
-              {
-                "option": "Different SMB message types have a different format.",
-                "correct": false
-              },
-              {
-                "option": "Clients establish a long term connection to servers.",
-                "correct": false
-              },
-              {
-                "option": "SMB messages cannot authenticate a session.",
-                "correct": false
-              },
-              {
-                "option": "SMB uses the FTP protocol for communication.",
                 "correct": false
               }
             ],
@@ -13346,7 +13156,7 @@
             "options": [
               {
                 "option": "malicious software or code running on an end device",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "an attack that slows or crashes a device or network service",
@@ -13381,7 +13191,7 @@
               },
               {
                 "option": "Uses encryption to secure the exchange of text, graphic images, sound, and video on the web.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Allows remote access to network devices and servers.",
@@ -13816,11 +13626,11 @@
             "options": [
               {
                 "option": "security",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "quality of service",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "scalability",
@@ -13836,10 +13646,10 @@
               },
               {
                 "option": "fault tolerance",
-                "correct": false
+                "correct": true
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Usernames and passwords relate to network security. Good quality video, to support video conferencing, relates to prioritizing the video traffic with quality of service (QoS). The fact that a connection to an ISP failed and was then restored but went unnoticed by employees relates to the fault tolerant design of the network.",
             "source": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
@@ -13851,7 +13661,7 @@
             "options": [
               {
                 "option": "improper termination",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "low-quality shielding in cable",
@@ -13863,14 +13673,14 @@
               },
               {
                 "option": "low-quality cable or connectors",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "loss of light over long distances",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:When terminated improperly, each cable is a potential source of physical layer performance degradation.",
             "source": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
@@ -14927,7 +14737,7 @@
               },
               {
                 "option": "implements trailer with frame check sequence for error detection",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
@@ -14935,14 +14745,14 @@
               },
               {
                 "option": "implements a process to delimit fields within an Ethernet 2 frame",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "adds Ethernet control information to network protocol data",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:FF02::2 identifies all IPv6 routers that exist on the link or network. FF02::1 is the target for all IPv6 enabled devices on the link or network.​",
             "source": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
             "modules_url": "https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html",
@@ -15618,7 +15428,7 @@
               },
               {
                 "option": "the network performance baseline",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "debug output and packet captures",
@@ -15645,7 +15455,7 @@
               },
               {
                 "option": "the network performance baseline",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "debug output and packet captures",
@@ -15672,7 +15482,7 @@
               },
               {
                 "option": "the network performance baseline",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "debug output and packet captures",
@@ -16950,7 +16760,7 @@
               },
               {
                 "option": "a tunneling protocol that provides remote users with secure access into the network of an organization",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "a network device that filters access and traffic coming into a network",
@@ -21134,33 +20944,6 @@
             "source": "https://itexamanswers.net/ccna-2-v7-modules-5-6-redundant-networks-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-5-6-redundant-networks-exam-answers.html",
             "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "53. Which protocol provides up to 16 instances of RSTP, combines many VLANs with the same physical and logical topology into a common RSTP instance, and provides support for PortFast, BPDU guard, BPDU filter, root guard, and loop guard?",
-            "images": [],
-            "options": [
-              {
-                "option": "STP",
-                "correct": false
-              },
-              {
-                "option": "Rapid PVST+",
-                "correct": false
-              },
-              {
-                "option": "PVST+",
-                "correct": false
-              },
-              {
-                "option": "MST",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-modules-5-6-redundant-networks-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-5-6-redundant-networks-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
           }
         ]
       },
@@ -22817,7 +22600,7 @@
               },
               {
                 "option": "The state is not maintained by the DHCPv6 server under stateless DHCPv6 operation.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -22844,7 +22627,7 @@
               },
               {
                 "option": "The state is not maintained by the DHCPv6 server under stateless DHCPv6 operation.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -22867,7 +22650,7 @@
               },
               {
                 "option": "HSRP for IPv6",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "VRRPv2",
@@ -23200,7 +22983,7 @@
               },
               {
                 "option": "a DHCPREQUEST unicast message​",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -25073,7 +24856,7 @@
               },
               {
                 "option": "authentication",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -25212,7 +24995,7 @@
               },
               {
                 "option": "wireless local-area network",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "wireless metropolitan-area network",
@@ -25243,7 +25026,7 @@
               },
               {
                 "option": "authorization",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -25262,7 +25045,7 @@
               },
               {
                 "option": "wireless metropolitan-area network",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "wireless personal-area network",
@@ -25293,7 +25076,7 @@
               },
               {
                 "option": "It checks the source MAC address in the Ethernet header against the sender MAC address in the ARP body.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It checks the source MAC address in the Ethernet header against the target MAC address in the ARP body.",
@@ -25312,7 +25095,7 @@
             "options": [
               {
                 "option": "accounting",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "authentication",
@@ -25351,7 +25134,7 @@
               },
               {
                 "option": "wireless local-area network",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -25366,7 +25149,7 @@
             "options": [
               {
                 "option": "Accounting",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Authorization",
@@ -25447,7 +25230,7 @@
             "options": [
               {
                 "option": "Configure the 5 GHz band for streaming multimedia and time sensitive traffic.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for one network and WPA2 Personal AES for the other network",
@@ -25455,7 +25238,7 @@
               },
               {
                 "option": "Configure the 2.4 GHz band for basic internet traffic that is not time sensitive.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for both networks.",
@@ -25466,7 +25249,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": null,
             "source": "https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html",
@@ -25478,7 +25261,7 @@
             "options": [
               {
                 "option": "802.1X",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "authorization",
@@ -25490,33 +25273,6 @@
               },
               {
                 "option": "authentication",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "75.Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.Which event will take place if there is a port security violation on switch S1 interface Fa0/1?",
-            "images": [],
-            "options": [
-              {
-                "option": "Packets with unknown source addresses will be dropped. (The correct answer)",
-                "correct": false
-              },
-              {
-                "option": "A syslog message is logged.",
-                "correct": false
-              },
-              {
-                "option": "A notification is sent.",
-                "correct": false
-              },
-              {
-                "option": "The interface will go into error-disabled state.",
                 "correct": false
               }
             ],
@@ -26982,7 +26738,7 @@
               },
               {
                 "option": "a static route to the 192.168.10.0/24 network",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "an OSPF-learned route to the 192.168.10.0/24 network",
@@ -27005,7 +26761,7 @@
             "options": [
               {
                 "option": "Static routing is more secure because it does not advertise over the network.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Static routing scales well with expanding networks.",
@@ -27017,14 +26773,14 @@
               },
               {
                 "option": "Static routing uses fewer router resources than dynamic routing.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Static routing is relatively easy to configure for large networks.",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Static routing requires a thorough understanding of the entire network for proper implementation. It can be prone to errors and does not scale well for large networks. Static routing uses fewer router resources, because no computing is required for updating routes. Static routing can also be more secure because it does not advertise over the network.",
             "source": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
@@ -27044,7 +26800,7 @@
               },
               {
                 "option": "the next-hop address of two different adjacent routers.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "an administrative distance of 2.",
@@ -27334,33 +27090,6 @@
             "source": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
             "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "30. What characteristic completes the following statement?When an IPv6 static route is configured, the next-hop address can be ……",
-            "images": [],
-            "options": [
-              {
-                "option": "a destination host route with a /128 prefix.",
-                "correct": false
-              },
-              {
-                "option": "the “show ipv6 route static” command.",
-                "correct": false
-              },
-              {
-                "option": "an IPv6 link-local address on the adjacent router.",
-                "correct": false
-              },
-              {
-                "option": "the interface type and interface number.",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
           }
         ]
       },
@@ -27381,7 +27110,7 @@
               },
               {
                 "option": "VLAN configuration",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "router port configuration",
@@ -27408,7 +27137,7 @@
               },
               {
                 "option": "The switch interface FastEthernet0/1 is configured as an access interface and should be configured as a trunk interface.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The switch interface FastEthernet0/1 is configured to not negotiate and should be configured to negotiate.​",
@@ -27439,7 +27168,7 @@
               },
               {
                 "option": "rogue access point",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "spoofing",
@@ -27468,7 +27197,7 @@
               },
               {
                 "option": "Serial0/0/0",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "None, the packet will be dropped.",
@@ -27499,7 +27228,7 @@
               },
               {
                 "option": "Serial0/0/0",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "None, the packet will be dropped.",
@@ -27530,7 +27259,7 @@
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the local VLAN.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the collision domain.",
@@ -27557,7 +27286,7 @@
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the local VLAN.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the collision domain.",
@@ -27584,7 +27313,7 @@
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the local VLAN.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It treats frames as unknown unicast and floods all incoming frames to all ports within the collision domain.",
@@ -27611,7 +27340,7 @@
               },
               {
                 "option": "authenticator",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "authentication server",
@@ -27638,7 +27367,7 @@
               },
               {
                 "option": "Segment the LAN into smaller LANs and route between them.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Replace at least half of the switches with hubs to reduce the size of the broadcast domain.",
@@ -27669,7 +27398,7 @@
               },
               {
                 "option": "SW1 floods the frame on all ports on SW1, excluding the port through which the frame entered the switch.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "SW1 drops the frame because it does not know the destination MAC address.",
@@ -27688,11 +27417,11 @@
             "options": [
               {
                 "option": "fast internal switching",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "large frame buffers",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "store-and-forward switching",
@@ -27707,7 +27436,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Switch characteristics that help alleviate network congestion include fast port speeds, fast internal switching, large frame buffers, and high port density.",
             "source": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
@@ -27728,7 +27457,7 @@
               },
               {
                 "option": "Copy the running configuration to the startup configuration.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Shut down the interface then enable it again with the no shutdown command.",
@@ -27751,7 +27480,7 @@
             "options": [
               {
                 "option": "Set the WAN connection in the wireless router as a DHCP client.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Set the connection between the wireless router and the DSL modem as a private IP network.",
@@ -27794,7 +27523,7 @@
               },
               {
                 "option": "PVST+ optimizes performance on the network through load sharing.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -27828,7 +27557,7 @@
               },
               {
                 "option": "PVST+ optimizes performance on the network through load sharing.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -27855,7 +27584,7 @@
               },
               {
                 "option": "PVST+ optimizes performance on the network through load sharing.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -27874,7 +27603,7 @@
               },
               {
                 "option": "A cable has not been attached to the port.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The no shutdown command has not been issued on the interface.",
@@ -27913,7 +27642,7 @@
               },
               {
                 "option": "It enters configuration mode for a switch virtual interface.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -27932,7 +27661,7 @@
               },
               {
                 "option": "when the Layer 2 switch needs to be remotely managed",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "when the Layer 2 switch is the default gateway of user traffic",
@@ -27968,7 +27697,7 @@
               },
               {
                 "option": "send the packet out interface Serial0/0/1",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "send the packet out interface FastEthernet0/0",
@@ -27999,7 +27728,7 @@
               },
               {
                 "option": "Change the administrative distance to 120.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28022,7 +27751,7 @@
               },
               {
                 "option": "Check the configuration of the exit interface on the new static route.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Verify that the static route to the server is present in the routing table.",
@@ -28049,7 +27778,7 @@
               },
               {
                 "option": "Router R1 will forward the packet out Gig0/1.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Router R1 will forward the packet out Gig0/0.",
@@ -28057,14 +27786,14 @@
               },
               {
                 "option": "Router R1 will de-encapsulate the packet and encapsulate it in an Ethernet frame.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Router R1 will forward the packet out S0/0/0.",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explain:Routing and Switching Essentials1.1.1 Router Functions1.2.2 Path DeterminationA router will look in the routing table for a destination network and locate an exit interface to forward a packet to a destination. After the exit interface is determined, the router will encapsulate a packet into the correct frame type.(PPP) is a data link (layer 2) protocol used to establish a direct connection between two nodes. (from wikipedia)",
             "source": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
@@ -28088,7 +27817,7 @@
               },
               {
                 "option": "The route was manually entered by an administrator.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The route was automatically installed when an IP address was configured on an active interface.",
@@ -28123,7 +27852,7 @@
               },
               {
                 "option": "The EtherChannel is in use and functional as indicated by the SU and P flags in the command output.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28151,7 +27880,7 @@
               },
               {
                 "option": "switchport trunk native vlan 66",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "switchport trunk allowed vlan add 99",
@@ -28178,7 +27907,7 @@
               },
               {
                 "option": "switchport trunk native vlan 66",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "switchport trunk allowed vlan add 99",
@@ -28214,7 +27943,7 @@
               },
               {
                 "option": "The VLAN that is used by PC-A is not in the list of allowed VLANs on the trunk.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28233,7 +27962,7 @@
             "options": [
               {
                 "option": "management VLAN",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "security VLAN",
@@ -28260,7 +27989,7 @@
             "options": [
               {
                 "option": "management VLAN",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "security VLAN",
@@ -28291,7 +28020,7 @@
             "options": [
               {
                 "option": "The FA0/0 interface is missing the command that informs the clients to use stateful DHCPv6.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "IPv6 has not been enabled globally on router R1.",
@@ -28318,7 +28047,7 @@
             "options": [
               {
                 "option": "The FA0/0 interface is missing the command that informs the clients to use stateful DHCPv6.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "IPv6 has not been enabled globally on router R1.",
@@ -28358,7 +28087,7 @@
               },
               {
                 "option": "show interfaces fastethernet 0/11 etherchannel",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "show etherchannel summary",
@@ -28389,7 +28118,7 @@
               },
               {
                 "option": "The interface must be initially configured with the switchport mode access command.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28416,7 +28145,7 @@
               },
               {
                 "option": "administrative distance",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28431,7 +28160,7 @@
             "options": [
               {
                 "option": "extended system ID",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "cost",
@@ -28443,18 +28172,18 @@
               },
               {
                 "option": "bridge priority",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "MAC address",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "port ID",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:The three components that are combined to form a bridge ID are bridge priority, extended system ID, and MAC address.",
             "source": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
             "modules_url": "https://itexamanswers.net/ccna-2-version-7-00-srwe-practice-final-exam-answers.html",
@@ -28487,7 +28216,7 @@
               },
               {
                 "option": "forward the packet out Serial0/0/0",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28515,7 +28244,7 @@
               },
               {
                 "option": "ip route 10.10.0.0 255.255.0.0 209.165.200.225 100",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "ip route 10.10.0.0 255.255.0.0 209.165.200.225 50",
@@ -28659,7 +28388,7 @@
               },
               {
                 "option": "The state is not maintained by the DHCPv6 server under stateless DHCPv6 operation.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -28686,7 +28415,7 @@
               },
               {
                 "option": "The state is not maintained by the DHCPv6 server under stateless DHCPv6 operation.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -29907,7 +29636,7 @@
               },
               {
                 "option": "2682112",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "3193856",
@@ -29942,7 +29671,7 @@
               },
               {
                 "option": "2682112",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "3193856",
@@ -29965,7 +29694,7 @@
             "options": [
               {
                 "option": "ipv6 nd other-config-flag​",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "prefix-delegation 2001:DB8:8::/48 00030001000E84244E70​",
@@ -29996,7 +29725,7 @@
             "options": [
               {
                 "option": "ipv6 nd other-config-flag​",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "prefix-delegation 2001:DB8:8::/48 00030001000E84244E70​",
@@ -30027,7 +29756,7 @@
             "options": [
               {
                 "option": "Configure the 5 GHz band for streaming multimedia and time sensitive traffic.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for one network and WPA2 Personal AES for the other network",
@@ -30035,7 +29764,7 @@
               },
               {
                 "option": "Configure the 2.4 GHz band for basic internet traffic that is not time sensitive.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for both networks.",
@@ -30046,7 +29775,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explain:To maintain the MAC address table, the switch uses the source MAC address of the incoming packets and the port that the packets enter. The destination address is used to select the outgoing port.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -30058,7 +29787,7 @@
             "options": [
               {
                 "option": "Configure the 5 GHz band for streaming multimedia and time sensitive traffic.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for one network and WPA2 Personal AES for the other network",
@@ -30066,7 +29795,7 @@
               },
               {
                 "option": "Configure the 2.4 GHz band for basic internet traffic that is not time sensitive.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the security mode to WPA Personal TKIP/AES for both networks.",
@@ -30077,7 +29806,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explain:To maintain the MAC address table, the switch uses the source MAC address of the incoming packets and the port that the packets enter. The destination address is used to select the outgoing port.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -30097,7 +29826,7 @@
               },
               {
                 "option": "Ensure that the old default route has been removed from the company edge routers.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Create a floating static route to that network.",
@@ -30120,7 +29849,7 @@
             "options": [
               {
                 "option": "PAgP",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "DTP",
@@ -30147,7 +29876,7 @@
             "options": [
               {
                 "option": "PAgP",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "DTP",
@@ -30213,7 +29942,7 @@
               },
               {
                 "option": "R2(config)# ip route 172.16.2.0 255.255.255.0 172.16.3.1",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "R2(config)# ip route 172.16.3.0 255.255.255.0 172.16.2.254",
@@ -30240,7 +29969,7 @@
               },
               {
                 "option": "R2(config)# ip route 172.16.2.0 255.255.255.0 172.16.3.1",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "R2(config)# ip route 172.16.3.0 255.255.255.0 172.16.2.254",
@@ -30307,7 +30036,7 @@
               },
               {
                 "option": "Configure either trunk port in the dynamic desirable mode.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Include a router in the topology.",
@@ -30338,7 +30067,7 @@
               },
               {
                 "option": "Configure either trunk port in the dynamic desirable mode.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Include a router in the topology.",
@@ -30369,7 +30098,7 @@
               },
               {
                 "option": "It disables an unused port.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It enables portfast on a specific switch interface.",
@@ -30400,7 +30129,7 @@
               },
               {
                 "option": "so that the attacker can see frames that are destined for other hosts",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "so that the attacker can execute arbitrary code on the switch",
@@ -30458,7 +30187,7 @@
               },
               {
                 "option": "sticky secure MAC addresses",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -30477,22 +30206,22 @@
               },
               {
                 "option": "802.11b",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "802.11g",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "802.11n",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "802.11ac",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:802.11b and 802.11g operate in the 2.4GHz range, and 802.11n can operate in either the 2.4GHz or the 5GHz range. 802.11a and 802.11ac operate only in the 5GHz range of frequencies.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -30513,7 +30242,7 @@
               },
               {
                 "option": "Trunk2",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Trunk3",
@@ -30540,7 +30269,7 @@
               },
               {
                 "option": "Trunk2",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Trunk3",
@@ -30567,7 +30296,7 @@
               },
               {
                 "option": "SLAAC",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "static",
@@ -30602,14 +30331,14 @@
               },
               {
                 "option": "TACACS+",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "RADIUS",
-                "correct": false
+                "correct": true
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Server-based AAA authentication uses an external TACACS or RADIUS authentication server to maintain a username and password database. When a client establishes a connection with an AAA enabled device, the device authenticates the client by querying the authentication servers.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -30621,7 +30350,7 @@
             "options": [
               {
                 "option": "to eliminate outsiders scanning for available SSIDs in the area",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "to reduce the risk of interference by external devices such as microwave ovens",
@@ -31419,7 +31148,7 @@
               },
               {
                 "option": "to enhance user bandwidth",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "to create more broadcast domains",
@@ -31431,14 +31160,14 @@
               },
               {
                 "option": "to isolate traffic between segments",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "to isolate ARP request messages from the rest of the network",
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:A switch has the ability of creating temporary point-to-point connections between the directly-attached transmitting and receiving network devices. The two devices have full-bandwidth full-duplex connectivity during the transmission.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -31458,7 +31187,7 @@
               },
               {
                 "option": "the ipv6 unicast-routing command",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "the ip routing command",
@@ -31485,7 +31214,7 @@
               },
               {
                 "option": "Configure the port as an 802.1q trunk port.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Configure the port as a trunk port and assign it to VLAN1.",
@@ -31513,7 +31242,7 @@
               },
               {
                 "option": "when packets are being dropped from a particular directly attached host",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "when an end device can reach local devices, but not remote devices",
@@ -31540,7 +31269,7 @@
               },
               {
                 "option": "when packets are being dropped from a particular directly attached host",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "when an end device can reach local devices, but not remote devices",
@@ -31567,7 +31296,7 @@
               },
               {
                 "option": "when packets are being dropped from a particular directly attached host",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "when an end device can reach local devices, but not remote devices",
@@ -31594,7 +31323,7 @@
               },
               {
                 "option": "User accounts must be configured locally on each device, which is an unscalable authentication solution.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "It is very susceptible to brute-force attacks because there is no username.",
@@ -31648,7 +31377,7 @@
               },
               {
                 "option": "This port is currently up.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The port is configured as a trunk link.",
@@ -31656,7 +31385,7 @@
               },
               {
                 "option": "Security violations will cause this port to shut down immediately.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "There is no device currently connected to this port.",
@@ -31664,10 +31393,10 @@
               },
               {
                 "option": "The switch port mode for this interface is access mode.",
-                "correct": false
+                "correct": true
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Because the security violation count is at 0, no violation has occurred. The system shows that 3 MAC addresses are allowed on port fa0/2, but only one has been configured and no sticky MAC addresses have been learned. The port is up because of the port status of secure-up. The violation mode is what happens when an unauthorized device is attached to the port. A port must be in access mode in order to activate and use port security.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -31691,7 +31420,7 @@
               },
               {
                 "option": "WPA2 Enterprise",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -31710,11 +31439,11 @@
             "options": [
               {
                 "option": "The EtherChannel is down.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The port channel ID is 2.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The port channel is a Layer 3 channel.",
@@ -31729,7 +31458,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Hot Standby Router Protocol (HSRP) is a Cisco-proprietary protocol that is designed to allow for transparent failover of a first-hop IPv4 device.",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -31745,7 +31474,7 @@
             "options": [
               {
                 "option": "WLANs",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "SECURITY",
@@ -31772,7 +31501,7 @@
             "options": [
               {
                 "option": "WLANs",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "SECURITY",
@@ -31816,7 +31545,7 @@
               },
               {
                 "option": "ipv6 route ::/0 serial 0/1/1",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -31843,7 +31572,7 @@
               },
               {
                 "option": "ipv6 route ::/0 serial 0/1/1",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -31870,7 +31599,7 @@
               },
               {
                 "option": "Check the statistics on the default route for oversaturation.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -31889,7 +31618,7 @@
               },
               {
                 "option": "The switch replaces the old entry and uses the more current port.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The switch updates the refresh timer for the entry.",
@@ -31920,7 +31649,7 @@
               },
               {
                 "option": "to facilitate group configuration and management of multiple WLANs through a WLC",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "to provide prioritized service for time-sensitive applications",
@@ -31939,7 +31668,7 @@
             "options": [
               {
                 "option": "creating SVI interfaces",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "adjusting the route metric",
@@ -31947,11 +31676,11 @@
               },
               {
                 "option": "enabling IP routing",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "assigning ports to VLANs",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "deleting the default VLAN",
@@ -31966,7 +31695,7 @@
                 "correct": false
               }
             ],
-            "question_type": "SINGLE_ANSWER",
+            "question_type": "MULTIPLE_ANSWER",
             "explanation": "Explanation:Steps to configure Layer 3 switch to route with a router:Step 1. Configure the routed port.Step 2. Enable routing.Step 3. Configure routing.Step 4. Verify routing.Step 5. Verify connectivity.Reference:4.3.8 Packet Tracer Configure Layer 3 Switching and inter VLAN Routing",
             "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
             "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
@@ -31986,7 +31715,7 @@
               },
               {
                 "option": "B. The encapsulation is misconfigured on a subinterface.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "C. A no shutdown command should be added in each subinterface configuration.",
@@ -32013,7 +31742,7 @@
               },
               {
                 "option": "B. The encapsulation is misconfigured on a subinterface.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "C. A no shutdown command should be added in each subinterface configuration.",
@@ -32222,7 +31951,7 @@
               },
               {
                 "option": "The switch adds the MAC address and incoming port number to the table.",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "The switch adds a MAC address table entry mapping for the destination MAC address and the ingress port.",
@@ -32451,7 +32180,7 @@
               },
               {
                 "option": "The VLAN that is used by PC-A is not in the list of allowed VLANs on the trunk.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -32478,7 +32207,7 @@
               },
               {
                 "option": "The VLAN that is used by PC-A is not in the list of allowed VLANs on the trunk.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -33000,7 +32729,7 @@
               },
               {
                 "option": "authenticator",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "authentication server",
@@ -33019,7 +32748,7 @@
             "options": [
               {
                 "option": "Dynamic ARP Inspection",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "IP Source Guard",
@@ -33058,7 +32787,7 @@
               },
               {
                 "option": "PVST+ optimizes performance on the network through load sharing.",
-                "correct": false
+                "correct": true
               }
             ],
             "question_type": "SINGLE_ANSWER",
@@ -33081,7 +32810,7 @@
               },
               {
                 "option": "HSRP",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "VTP",
@@ -33162,7 +32891,7 @@
               },
               {
                 "option": "Segment the LAN into smaller LANs and route between them.*",
-                "correct": false
+                "correct": true
               },
               {
                 "option": "Replace at least half of the switches with hubs to reduce the size of the broadcast domain.",
@@ -33402,91 +33131,6 @@
               },
               {
                 "option": "MANAGEMENT",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "95. Refer to the exhibit. A network administrator is verifying the configuration of inter-VLAN routing. Users complain that PC2 cannot communicate with PC1. Based on the output, what is the possible cause of the problem?",
-            "images": [],
-            "options": [
-              {
-                "option": "Gi0/0 is not configured as a trunk port.",
-                "correct": false
-              },
-              {
-                "option": "The command interface GigabitEthernet0/0.5 was entered incorrectly.",
-                "correct": false
-              },
-              {
-                "option": "There is no IP address configured on the interface Gi0/0.",
-                "correct": false
-              },
-              {
-                "option": "The no shutdown command is not entered on subinterfaces.",
-                "correct": false
-              },
-              {
-                "option": "The encapsulation dot1Q 5 command contains the wrong VLAN.",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "85. A network administrator of a small advertising company is configuring WLAN security by using the WPA2 PSK method. Which credential do office users need in order to connect their laptops to the WLAN?",
-            "images": [],
-            "options": [
-              {
-                "option": "the company username and password through Active Directory service",
-                "correct": false
-              },
-              {
-                "option": "a key that matches the key on the AP",
-                "correct": false
-              },
-              {
-                "option": "a user passphrase",
-                "correct": false
-              },
-              {
-                "option": "a username and password configured on the AP",
-                "correct": false
-              }
-            ],
-            "question_type": "SINGLE_ANSWER",
-            "explanation": null,
-            "source": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "modules_url": "https://itexamanswers.net/ccna-2-v7-0-final-exam-answers-full-switching-routing-and-wireless-essentials.html",
-            "course_url": "https://itexamanswers.net/ccna-2-v7-exam-answers-switching-routing-and-wireless-essentials-v7-0-srwe.html"
-          },
-          {
-            "question": "124. Refer to the exhibit. A network administrator configures R1 for inter-VLAN routing between VLAN 10 and VLAN 20. However, the devices in VLAN 10 and VLAN 20 cannot communicate. Based on the configuration in the exhibit, what is a possible cause for the problem?",
-            "images": [],
-            "options": [
-              {
-                "option": "A. The port Gi0/0 should be configured as trunk port.",
-                "correct": false
-              },
-              {
-                "option": "B. The encapsulation is misconfigured on a subinterface.",
-                "correct": false
-              },
-              {
-                "option": "C. A no shutdown command should be added in each subinterface configuration.",
-                "correct": false
-              },
-              {
-                "option": "D. The command interface gigabitEthernet 0/0.1 is wrong.",
                 "correct": false
               }
             ],
