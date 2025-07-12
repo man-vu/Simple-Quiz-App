@@ -55,17 +55,8 @@ export function QuestionNavigation({
   }, [currentQuestionIndex, isMobile]);
 
   const handleNextClick = () => {
-    if (!feedbackShown[currentQuestionIndex]) {
-      // First click: Show feedback
-      onShowFeedback(currentQuestionIndex);
-    } else {
-      // Second click: Move to next question
-      onHideFeedback(currentQuestionIndex);
-      onNext();
-    }
+    onNext();
   };
-
-  const isCurrentQuestionFeedbackShown = feedbackShown[currentQuestionIndex];
 
   return (
     <>
@@ -125,16 +116,12 @@ export function QuestionNavigation({
                   </Button>
                 ) : (
                   <Button
-                    variant={isCurrentQuestionFeedbackShown ? "default" : "outline"}
+                    variant="outline"
                     size="icon"
                     onClick={handleNextClick}
                     className="flex-shrink-0"
                   >
-                    {isCurrentQuestionFeedbackShown ? (
-                      <ArrowRight className="h-4 w-4" />
-                    ) : (
-                      <Eye className="h-4 w-4" />
-                    )}
+                    <ArrowRight className="h-4 w-4" />
                   </Button>
                 )}
               </div>
