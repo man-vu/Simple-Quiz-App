@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Eye } from 'lucide-react';
 
 interface QuestionNavigationProps {
   totalQuestions: number;
@@ -12,6 +12,9 @@ interface QuestionNavigationProps {
   onNext: () => void;
   onSubmit: () => void;
   isMobile?: boolean;
+  feedbackShown: Record<number, boolean>;
+  onShowFeedback: (questionIndex: number) => void;
+  onHideFeedback: (questionIndex: number) => void;
 }
 
 export function QuestionNavigation({
@@ -22,7 +25,10 @@ export function QuestionNavigation({
   onPrevious,
   onNext,
   onSubmit,
-  isMobile = false
+  isMobile = false,
+  feedbackShown,
+  onShowFeedback,
+  onHideFeedback
 }: QuestionNavigationProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -47,6 +53,19 @@ export function QuestionNavigation({
       }
     }
   }, [currentQuestionIndex, isMobile]);
+
+  const handleNextClick = () => {
+    if (!feedbackShown[currentQuestionIndex]) {
+      // First click: Show feedback
+      onShowFeedback(currentQuestionIndex);
+    } else {
+      // Second click: Move to next question
+      onHideFeedback(currentQuestionIndex);
+      onNext();
+    }
+  };
+
+  const isCurrentQuestionFeedbackShown = feedbackShown[currentQuestionIndex];
 
   return (
     <>
@@ -106,12 +125,16 @@ export function QuestionNavigation({
                   </Button>
                 ) : (
                   <Button
-                    variant="outline"
+                    variant={isCurrentQuestionFeedbackShown ? "default" : "outline"}
                     size="icon"
-                    onClick={onNext}
+                    onClick={handleNextClick}
                     className="flex-shrink-0"
                   >
-                    <ArrowRight className="h-4 w-4" />
+                    {isCurrentQuestionFeedbackShown ? (
+                      <ArrowRight className="h-4 w-4" />
+                    ) : (
+                      <Eye className="h-4 w-4" />
+                    )}
                   </Button>
                 )}
               </div>

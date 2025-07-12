@@ -36,7 +36,7 @@ export function SingleAnswer({
   imageUrl,
   value: externalValue,
   onValueChange,
-  showFeedback = true,
+  showFeedback = false,
   explanation
 }: SingleAnswerProps) {
   const [internalValue, setInternalValue] = useState<string>("");
@@ -55,7 +55,7 @@ export function SingleAnswer({
   const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 
   // Determine if feedback should be shown
-  const shouldShowFeedback = showFeedback && selectedOption;
+  const shouldShowFeedback = selectedOption || showFeedback === true;
   
   // Get the correct option ID
   const correctOptionId = options.find(opt => opt.text === correctAnswer)?.id;
@@ -148,7 +148,7 @@ export function SingleAnswer({
         </RadioGroup>
         
         {/* Feedback Message */}
-        {shouldShowFeedback && selectedOption && (
+        {shouldShowFeedback && (
           <div className={cn(
             "p-4 rounded-lg border transition-colors",
             selectedOption === correctOptionId 
@@ -161,10 +161,15 @@ export function SingleAnswer({
                   <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
                   <span className="text-green-800 dark:text-green-200 font-medium">Correct!</span>
                 </>
-              ) : (
+              ) : selectedOption ? (
                 <>
                   <XCircle className="h-5 w-5 text-red-600 dark:text-red-400" />
                   <span className="text-red-800 dark:text-red-200 font-medium">Incorrect</span>
+                </>
+              ) : (
+                <>
+                  <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
+                  <span className="text-green-800 dark:text-green-200 font-medium">Answer</span>
                 </>
               )}
             </div>
@@ -172,13 +177,17 @@ export function SingleAnswer({
               "text-sm mt-1",
               selectedOption === correctOptionId 
                 ? "text-green-700 dark:text-green-300" 
-                : "text-red-700 dark:text-red-300"
+                : selectedOption
+                  ? "text-red-700 dark:text-red-300"
+                  : "text-green-700 dark:text-green-300"
             )}>
               {explanation 
                 ? explanation
                 : selectedOption === correctOptionId 
                   ? "Great job! You selected the correct answer." 
-                  : `The correct answer is: ${correctAnswer}`
+                  : selectedOption
+                    ? `The correct answer is: ${correctAnswer}`
+                    : `The correct answer is: ${correctAnswer}`
               }
             </p>
           </div>

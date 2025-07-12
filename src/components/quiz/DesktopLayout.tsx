@@ -21,6 +21,7 @@ interface DesktopLayoutProps {
   correctAnswers: number;
   totalQuestions: number;
   isQuestionAnswered: (index: number) => boolean;
+  feedbackShown: Record<number, boolean>;
   onCourseSelect: (course: string) => void;
   onStartQuiz: (course: string, module: string) => void;
   onReset: () => void;
@@ -31,6 +32,8 @@ interface DesktopLayoutProps {
   onNext: () => void;
   onSubmit: () => void;
   onCloseResults: () => void;
+  onShowFeedback: (questionIndex: number) => void;
+  onHideFeedback: (questionIndex: number) => void;
 }
 
 export function DesktopLayout({
@@ -46,6 +49,7 @@ export function DesktopLayout({
   correctAnswers,
   totalQuestions,
   isQuestionAnswered,
+  feedbackShown,
   onCourseSelect,
   onStartQuiz,
   onReset,
@@ -55,7 +59,9 @@ export function DesktopLayout({
   onPrevious,
   onNext,
   onSubmit,
-  onCloseResults
+  onCloseResults,
+  onShowFeedback,
+  onHideFeedback
 }: DesktopLayoutProps) {
   const currentQuestion = currentQuestions[currentQuestionIndex];
   const userAnswer = userAnswers[currentQuestionIndex] || '';
@@ -104,6 +110,7 @@ export function DesktopLayout({
                 userAnswer={userAnswer}
                 onSingleAnswer={onSingleAnswer}
                 onMultipleAnswer={onMultipleAnswer}
+                showFeedback={feedbackShown[currentQuestionIndex]}
               />
 
               <QuestionNavigation
@@ -114,6 +121,9 @@ export function DesktopLayout({
                 onPrevious={onPrevious}
                 onNext={onNext}
                 onSubmit={onSubmit}
+                feedbackShown={feedbackShown}
+                onShowFeedback={onShowFeedback}
+                onHideFeedback={onHideFeedback}
               />
             </div>
           )}

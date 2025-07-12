@@ -18,6 +18,7 @@ interface MobileQuizLayoutProps {
   correctAnswers: number;
   totalQuestions: number;
   isQuestionAnswered: (index: number) => boolean;
+  feedbackShown: Record<number, boolean>;
   onBackToSelection: () => void;
   onReset: () => void;
   onSingleAnswer: (questionIndex: number, answer: string) => void;
@@ -27,6 +28,8 @@ interface MobileQuizLayoutProps {
   onNext: () => void;
   onSubmit: () => void;
   onCloseResults: () => void;
+  onShowFeedback: (questionIndex: number) => void;
+  onHideFeedback: (questionIndex: number) => void;
 }
 
 export function MobileQuizLayout({
@@ -40,6 +43,7 @@ export function MobileQuizLayout({
   correctAnswers,
   totalQuestions,
   isQuestionAnswered,
+  feedbackShown,
   onBackToSelection,
   onReset,
   onSingleAnswer,
@@ -48,7 +52,9 @@ export function MobileQuizLayout({
   onPrevious,
   onNext,
   onSubmit,
-  onCloseResults
+  onCloseResults,
+  onShowFeedback,
+  onHideFeedback
 }: MobileQuizLayoutProps) {
   const currentQuestion = currentQuestions[currentQuestionIndex];
   const userAnswer = userAnswers[currentQuestionIndex] || '';
@@ -73,6 +79,7 @@ export function MobileQuizLayout({
           onSingleAnswer={onSingleAnswer}
           onMultipleAnswer={onMultipleAnswer}
           isMobile={true}
+          showFeedback={feedbackShown[currentQuestionIndex]}
         />
 
         <QuestionNavigation
@@ -84,6 +91,9 @@ export function MobileQuizLayout({
           onNext={onNext}
           onSubmit={onSubmit}
           isMobile={true}
+          feedbackShown={feedbackShown}
+          onShowFeedback={onShowFeedback}
+          onHideFeedback={onHideFeedback}
         />
       </div>
 

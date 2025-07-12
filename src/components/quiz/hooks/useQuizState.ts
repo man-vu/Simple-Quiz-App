@@ -8,6 +8,7 @@ export function useQuizState() {
   const [userAnswers, setUserAnswers] = useState<Record<number, string | string[]>>({});
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
+  const [feedbackShown, setFeedbackShown] = useState<Record<number, boolean>>({});
 
   const calculateScore = (currentQuestions: QuizQuestion[]) => {
     let correctAnswers = 0;
@@ -50,6 +51,20 @@ export function useQuizState() {
     }));
   };
 
+  const handleShowFeedback = (questionIndex: number) => {
+    setFeedbackShown(prev => ({
+      ...prev,
+      [questionIndex]: true
+    }));
+  };
+
+  const handleHideFeedback = (questionIndex: number) => {
+    setFeedbackShown(prev => ({
+      ...prev,
+      [questionIndex]: false
+    }));
+  };
+
   const handleSubmit = (currentQuestions: QuizQuestion[]) => {
     const result = calculateScore(currentQuestions);
     setScore(result.percentage);
@@ -61,6 +76,7 @@ export function useQuizState() {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setScore(0);
+    setFeedbackShown({});
   };
 
   const handleNext = (currentQuestions: QuizQuestion[]) => {
@@ -88,6 +104,7 @@ export function useQuizState() {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setScore(0);
+    setFeedbackShown({});
   };
 
   const handleBackToSelection = () => {
@@ -97,6 +114,7 @@ export function useQuizState() {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setScore(0);
+    setFeedbackShown({});
   };
 
   return {
@@ -110,9 +128,12 @@ export function useQuizState() {
     showResults,
     setShowResults,
     score,
+    feedbackShown,
     calculateScore,
     handleSingleAnswer,
     handleMultipleAnswer,
+    handleShowFeedback,
+    handleHideFeedback,
     handleSubmit,
     handleReset,
     handleNext,

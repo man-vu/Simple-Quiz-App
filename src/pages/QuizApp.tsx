@@ -22,9 +22,12 @@ export default function QuizApp() {
     showResults,
     setShowResults,
     score,
+    feedbackShown,
     calculateScore,
     handleSingleAnswer,
     handleMultipleAnswer,
+    handleShowFeedback,
+    handleHideFeedback,
     handleSubmit,
     handleReset,
     handleNext,
@@ -97,6 +100,7 @@ export default function QuizApp() {
         correctAnswers={scoreData.correctAnswers}
         totalQuestions={scoreData.totalQuestions}
         isQuestionAnswered={isQuestionAnswered}
+        feedbackShown={feedbackShown}
         onBackToSelection={handleBackToSelectionWithMobile}
         onReset={handleReset}
         onSingleAnswer={handleSingleAnswer}
@@ -106,6 +110,8 @@ export default function QuizApp() {
         onNext={() => handleNext(currentQuestions)}
         onSubmit={() => handleSubmit(currentQuestions)}
         onCloseResults={() => setShowResults(false)}
+        onShowFeedback={handleShowFeedback}
+        onHideFeedback={handleHideFeedback}
       />
     );
   }
@@ -127,6 +133,7 @@ export default function QuizApp() {
       correctAnswers={scoreData.correctAnswers}
       totalQuestions={scoreData.totalQuestions}
       isQuestionAnswered={isQuestionAnswered}
+      feedbackShown={feedbackShown}
       onCourseSelect={setSelectedCourse}
       onStartQuiz={handleStartQuiz}
       onReset={handleReset}
@@ -137,6 +144,8 @@ export default function QuizApp() {
       onNext={() => handleNext(currentQuestions)}
       onSubmit={() => handleSubmit(currentQuestions)}
       onCloseResults={() => setShowResults(false)}
+      onShowFeedback={handleShowFeedback}
+      onHideFeedback={handleHideFeedback}
     />
   );
 } 

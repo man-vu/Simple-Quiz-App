@@ -11,6 +11,7 @@ interface QuestionDisplayProps {
   onSingleAnswer: (questionIndex: number, answer: string) => void;
   onMultipleAnswer: (questionIndex: number, answers: string[]) => void;
   isMobile?: boolean;
+  showFeedback?: boolean;
 }
 
 export function QuestionDisplay({
@@ -19,7 +20,8 @@ export function QuestionDisplay({
   userAnswer,
   onSingleAnswer,
   onMultipleAnswer,
-  isMobile = false
+  isMobile = false,
+  showFeedback = false
 }: QuestionDisplayProps) {
   return (
     <Card>
@@ -38,7 +40,7 @@ export function QuestionDisplay({
             imageUrl={question.images[0]}
             value={userAnswer as string}
             onValueChange={(value) => onSingleAnswer(questionIndex, value)}
-            showFeedback={true}
+            showFeedback={showFeedback}
             explanation={question.explanation}
           />
         ) : (
@@ -55,7 +57,7 @@ export function QuestionDisplay({
             imageUrl={question.images[0]}
             value={userAnswer as string[]}
             onValueChange={(value) => onMultipleAnswer(questionIndex, value)}
-            showFeedback={true}
+            showFeedback={showFeedback}
             explanation={question.explanation}
           />
         )}

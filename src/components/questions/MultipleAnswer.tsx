@@ -36,7 +36,7 @@ export function MultipleAnswer({
   imageUrl,
   value: externalValue,
   onValueChange,
-  showFeedback = true,
+  showFeedback = false,
   explanation
 }: MultipleAnswerProps) {
   const [internalSelectedOptions, setInternalSelectedOptions] = useState<string[]>([]);
@@ -67,9 +67,11 @@ export function MultipleAnswer({
     .filter(opt => correctAnswers.includes(opt.text))
     .map(opt => opt.id);
 
-  // Determine if feedback should be shown (when all correct answers are selected)
+  // Determine if feedback should be shown
+  const shouldShowFeedback = selectedOptions.length > 0 || showFeedback === true;
+  
+  // Check if all correct answers are selected
   const allCorrectSelected = correctOptionIds.every(id => selectedOptions.includes(id));
-  const shouldShowFeedback = showFeedback && allCorrectSelected && selectedOptions.length > 0;
   
   // Check if the answer is completely correct
   const isCompletelyCorrect = allCorrectSelected && selectedOptions.length === correctOptionIds.length;
@@ -164,12 +166,19 @@ export function MultipleAnswer({
         {shouldShowFeedback && (
           <div className={cn(
             "p-4 rounded-lg border transition-colors",
-            isCompletelyCorrect 
-              ? "bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800" 
-              : "bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800"
+            selectedOptions.length === 0
+              ? "bg-blue-50 border-blue-200 dark:bg-blue-900/20 dark:border-blue-800"
+              : isCompletelyCorrect 
+                ? "bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800" 
+                : "bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800"
           )}>
             <div className="flex items-center gap-2">
-              {isCompletelyCorrect ? (
+              {selectedOptions.length === 0 ? (
+                <>
+                  <CheckCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                  <span className="text-blue-800 dark:text-blue-200 font-medium">Answer</span>
+                </>
+              ) : isCompletelyCorrect ? (
                 <>
                   <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
                   <span className="text-green-800 dark:text-green-200 font-medium">Correct!</span>
@@ -183,15 +192,19 @@ export function MultipleAnswer({
             </div>
             <p className={cn(
               "text-sm mt-1",
-              isCompletelyCorrect 
-                ? "text-green-700 dark:text-green-300" 
-                : "text-yellow-700 dark:text-yellow-300"
+              selectedOptions.length === 0
+                ? "text-blue-700 dark:text-blue-300"
+                : isCompletelyCorrect 
+                  ? "text-green-700 dark:text-green-300" 
+                  : "text-yellow-700 dark:text-yellow-300"
             )}>
               {explanation 
                 ? explanation
-                : isCompletelyCorrect 
-                  ? "Great job! You selected all the correct answers." 
-                  : `You selected ${selectedOptions.length} out of ${correctOptionIds.length} correct answers. The correct answers are: ${correctAnswers.join(', ')}`
+                : selectedOptions.length === 0
+                  ? `The correct answers are: ${correctAnswers.join(', ')}`
+                  : isCompletelyCorrect 
+                    ? "Great job! You selected all the correct answers." 
+                    : `You selected ${selectedOptions.length} out of ${correctOptionIds.length} correct answers. The correct answers are: ${correctAnswers.join(', ')}`
               }
             </p>
           </div>
